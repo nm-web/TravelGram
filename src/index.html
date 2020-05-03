@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Static HTML Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pompiere|Work+Sans&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/fontello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./static/js/slick.min.js"></script>
+    <script src="./static/js/wow.min.js"></script>
+    <link href="./static/css/slick.css" rel="stylesheet">
+    <link href="./static/css/slick-theme.css" rel="stylesheet">
+    <link href="./static/css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="back-top"  >
+    <i class="icon-up-open-big"></i>
+</div>
+<header class="header">
+    <div class="row-logo row-between content_center">
+        <form action="/" name="header-search" method="post">
+            <div class="search-box">
+                <input name="search" placeholder="Search and hit enter">
+                <i class="icon-search"></i>
+            </div>
+        </form>
+        <a href="#"><img src="./static/image/logoHeader.png" alt="" class="wow bounceIn"  data-wow-duration="2s"></a>
+        <form action="/" name="header-subscribe" method="post">
+            <button class="btn-subcribe">SubScribe</button>
+        </form>
+    </div>
+    <section class="row-menu row-between content_center">
+        <nav aria-label="menu">
+            <ul class="menu-top">
+                <li><a href="#" class="color-yellow">home</a></li>
+                <li><a href="#">fetured</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">categories</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="icon-menu menu-toggle"></div>
+        <ul class="menu-social">
+            <li><a href="#" class="icon-facebook"></a></li>
+            <li><a href="#" class="icon-twitter"></a></li>
+            <li><a href="#" class="icon-linkedin"></a></li>
+            <li><a href="#" class="icon-instagram"></a></li>
+            <li><a href="#" class="icon-youtube-play"></a></li>
+        </ul>
+    </section>
+    <div class="slider">
+        <div class="slider-box"
+             style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('/static/image/slider.jpg');">
+
+            <section class="slider-box__title wow fadeInLeft " data-wow-delay="0.5s">
+                <h1>travelling</h1>
+                <p>SPORTS THAT NEVER ends</p>
+            </section>
+
+            <section class="slider-box__text">
+                <p class="subtitle">FEATURED blog</p>
+                <h3><a href="#">lost in space</a></h3>
+                <p>Some modern factory robots are "autonomous" within the strict confines of their direct environment.
+                    It may not be
+                    that every degree of freedom exists</p>
+                <a href="#" class="btn_slider">EXPLORE NOW</a>
+            </section>
+
+        </div>
+        <div class="slider-box"
+             style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('/static/image/slider.jpg');">
+            <section class="slider-box__title " >
+                <h1>Trekking</h1>
+                <p>sports for all time</p>
+            </section>
+
+            <section class="slider-box__text">
+                <p class="subtitle">FEATURED blog</p>
+                <h3><a href="#">lost in space</a></h3>
+                <p>Some modern factory robots are "autonomous" within the strict confines of their direct environment.
+                    It may not be
+                    that every degree of freedom exists</p>
+                <a href="#" class="btn_slider">EXPLORE NOW</a>
+            </section>
+
+
+
+        </div>
+        <div class="slider-box"
+             style="background-image:  linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('/static/image/slider.jpg');">
+            <section class="slider-box__title " >
+                <h1>lifestyle</h1>
+                <p>live in pleasure</p>
+            </section>
+
+            <section class="slider-box__text">
+                <p class="subtitle">FEATURED blog</p>
+                <h3><a href="#">lost in space</a></h3>
+                <p>Some modern factory robots are "autonomous" within the strict confines of their direct environment.
+                    It may not be
+                    that every degree of freedom exists</p>
+                <a href="#" class="btn_slider">EXPLORE NOW</a>
+            </section>
+        </div>
+        <div class="slider-box"
+             style="background-image:linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('/static/image/slider.jpg');">
+
+        </div>
+    </div>
+
+</header>
+
+<div class="body-page">
+    <aside class="sidebar">
+        <section class="widget_map widget box-style wow fadeInLeft" data-wow-delay="0.5s">
+            <h3 class="before-line-after">where am i</h3>
+<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21659.159743165008!2d39.82018735!3d47.26753315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a7b4d54820e51ab!2z0JvQtdC90YLQsA!5e0!3m2!1sru!2sru!4v1575033215097!5m2!1sru!2sru"-->
+<!--                    height="800" frameborder="0" style="border:0;"></iframe>-->
+        </section>
+
+        <section class="widget_about widget box-style wow fadeInLeft" data-wow-offset="200">
+            <h3 class="before-line-after"> about me</h3>
+            <p>Hi! I'm a Travellerr based on Assam
+                I love editing photos, clicking photos, creating responsive websites alongwith high quality
+                graphics.</p>
+            <div><strong>Follow Me</strong>
+                <ul class="menu-social">
+                    <li><a href="#" class="icon-facebook"></a></li>
+                    <li><a href="#" class="icon-twitter"></a></li>
+                    <li><a href="#" class="icon-linkedin"></a></li>
+                    <li><a href="#" class="icon-instagram"></a></li>
+                    <li><a href="#" class="icon-youtube-play"></a></li>
+                </ul>
+            </div>
+            <img src="./static/image/eay.png" alt="">
+        </section>
+
+        <section class="widget newsletter box-style wow fadeInLeft" data-wow-offset="200">
+            <h4 class="before-line-after">Newsletter</h4>
+            <form action="/" name="newsletter" method="post">
+                <input type="email" placeholder="Your email adress" aria-label="Email" >
+                <button type="submit">sign up</button>
+            </form>
+        </section>
+
+        <section class="widget_categories widget box-style wow fadeInLeft" data-wow-offset="200">
+            <h4 class="before-line-after">Categories</h4>
+            <ul>
+                <li><a href="">Nature</a></li>
+                <li><a href="">Nightlife</a></li>
+                <li><a href="">Lifestyle</a></li>
+                <li><a href="">Food</a></li>
+            </ul>
+        </section>
+
+        <section class="widget_posts widget box-style wow fadeInLeft" data-wow-offset="200">
+            <h4 class="before-line-after">Recent Post</h4>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./static/image/post1.png" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="#"><h5>Travelling with your buddies.</h5></a>
+                    <time class="date_color"> July 25, 2016</time>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./static/image/post2.png" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="#"><h5>Travelling with your buddies.</h5></a>
+                    <time class="date_color"> July 25, 2016</time>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./static/image/post3.png" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="#"><h5>Travelling with your buddies.</h5></a>
+                    <time class="date_color"> July 25, 2016</time>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./static/image/post4.png" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="#"><h5>Travelling with your buddies.</h5></a>
+                    <time class="date_color"> July 25, 2016</time>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./static/image/post5.png" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="#"><h5>Travelling with your buddies.</h5></a>
+                    <time class="date_color"> July 25, 2016</time>
+                </div>
+
+            </div>
+        </section>
+        <section class="widget_tags widget box-style wow fadeInLeft" data-wow-offset="200">
+            <h4 class="before-line-after">tags</h4>
+            <div class="row">
+                <div class="tags-col-1">
+                    <a href="#">LIFESTYLE</a>
+                    <a href="#">NATURE</a>
+                    <a href="#">TREKKING</a>
+                </div>
+                <div class="tags-col-1">
+                    <a href="#">TRAVEL</a>
+                    <a href="#">LOST</a>
+                    <a href="#">LIFESTYLE</a>
+                </div>
+            </div>
+        </section>
+        <section class="widget_contacts box-style wow zoomIn" data-wow-offset="200" data-wow-duration="2s">
+            <h3>CONTACT ME</h3>
+            <form action="/" name="contact" method="post" id="contact">
+                <p><input type="text" placeholder="Your Name" required name="name"></p>
+                <p><input type="email" placeholder="Your Email" required name="email"></p>
+                <p><textarea name="text" placeholder="Your Message" required></textarea></p>
+                <button type="submit" id="send">send</button>
+            </form>
+        </section>
+    </aside>
+
+    <main class="content">
+
+        <article class="post box-style_article">
+            <section class="text">
+                <a href="#"><span class="tag">NIGHT LIFE</span></a>
+                <a href="#"><h3 class="head-underline">Written in the stars, Million miles away!</h3></a>
+                <p>A high degree of autonomy is particularly desirable in fields s...</p>
+                <div class="post__footer">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <ul class="post__menu-social">
+                        <li>share</li>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="photo">
+                <a href="#"><img src="./static/image/nightlife.jpg" alt="" class="wow zoomIn" data-wow-offset="200" data-wow-duration="1.5s"></a>
+                <div class="photo_top">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <div class="date-comment">
+                        <time>April 19, 2017</time>
+                        <i class="icon-heart-empty">100</i>
+                        <i class="icon-comment-empty">20</i>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article class="post box-style_article">
+            <section class="photo">
+                <a href="#"><img src="./static/image/trekking.png" alt="" class="wow zoomIn" data-wow-offset="200" data-wow-duration="1.5s"></a>
+                <div class="photo_top">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <div class="date-comment">
+                        <time>April 19, 2017</time>
+                        <i class="icon-heart-empty">100</i>
+                        <i class="icon-comment-empty">20</i>
+                    </div>
+                </div>
+            </section>
+            <section class="text">
+                <a href="#"><span class="tag">Trekking</span></a>
+                <a href="#"><h3 class="head-underline">Written in the stars, Million miles away!</h3></a>
+                <p>A high degree of autonomy is particularly desirable in fields s...</p>
+                <div class="post__footer">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <ul class="post__menu-social">
+                        <li>share</li>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+        <article class="post_collumn post box-style">
+            <section class="photo-full">
+                <a href="#"><img src="./static/image/lifestyle.jpg" alt=""></a>
+            </section>
+            <section class="text">
+                <a href="#"><span class="tag">lifestyle</span></a>
+                <a href="#"><h3> The Vermont Delegation Mourns the Sanders Campaign</h3></a>
+                <div class="date-comment">
+                    <time>April 19, 2017</time>
+                    <i class="icon-heart-empty"><span>100 likes</span></i>
+                    <i class="icon-comment-empty"><span>20 comments</span></i>
+                </div>
+                <div class="post__footer">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <ul class="post__menu-social">
+                        <li>share</li>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+        <article class="post box-style">
+
+            <div class="col-half">
+                <section class="photo">
+                    <a href="#">
+                        <img src="./static/image/foodTravel.jpg" alt="" class="wow zoomIn" data-wow-offset="200"
+                                    data-wow-duration="1.5s">
+                    </a>
+                    <div class="photo_top">
+                        <a href="#" class="btn-readmore">readmore</a>
+                        <div class="date-comment">
+                            <time>April 19, 2017</time>
+                            <i class="icon-heart-empty">100</i>
+                            <i class="icon-comment-empty">20</i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text">
+                    <a href="#"><span class="tag">FOOD and TRAVEL</span></a>
+                    <a href="#"><h3 >And what falls, is fallen And what falls, is fa</h3></a>
+                    <div class="date-comment">
+                        <time>April 19, 2017</time>
+                        <i class="icon-heart-empty"><span>100 likes</span></i>
+                        <i class="icon-comment-empty"><span>20 comments</span></i>
+                    </div>
+                    <div class="post__footer">
+                        <a href="#" class="btn-readmore">readmore</a>
+                        <ul class="post__menu-social">
+                            <li>share</li>
+                            <li><a href="#" class="icon-facebook"></a></li>
+                            <li><a href="#" class="icon-twitter"></a></li>
+                            <li><a href="#" class="icon-instagram"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="col-half">
+                <section class="photo">
+                    <a href="#">
+                        <img src="./static/image/foodTravel2.jpg" alt="" class="wow zoomIn"
+                                    data-wow-offset="100">
+                    </a>
+                    <div class="photo_top">
+                        <a href="#" class="btn-readmore">readmore</a>
+                        <div class="date-comment">
+                            <time>April 19, 2017</time>
+                            <i class="icon-heart-empty">100</i>
+                            <i class="icon-comment-empty">20</i>
+                        </div>
+                    </div>
+                </section>
+                <section class="text">
+                    <a href="#"><span class="tag">FOOD and TRAVEL</span></a>
+                    <a href="#"><h3>And what falls, is fallen And what falls, is fa</h3></a>
+                    <div class="date-comment">
+                        <time>April 19, 2017</time>
+                        <i class="icon-heart-empty"><span>100 likes</span></i>
+                        <i class="icon-comment-empty"><span>20 comments</span></i>
+                    </div>
+                    <div class="post__footer">
+                        <a href="#" class="btn-readmore">readmore</a>
+                        <ul class="post__menu-social">
+                            <li>share</li>
+                            <li><a href="#" class="icon-facebook"></a></li>
+                            <li><a href="#" class="icon-twitter"></a></li>
+                            <li><a href="#" class="icon-instagram"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article class="post_collumn post box-style">
+            <section class="photo-full">
+                <a href="#"><img src="./static/image/lifestyle-big1.jpg" alt=""></a>
+            </section>
+            <section class="text">
+                <a href="#"><span class="tag">lifestyle</span></a>
+                <a href="#"><h3> The Vermont Delegation Mourns the Sanders Campaign</h3></a>
+                <div class="date-comment">
+                    <time>April 19, 2017</time>
+                    <i class="icon-heart-empty"><span>100 likes</span></i>
+                    <i class="icon-comment-empty"><span>20 comments</span></i>
+                </div>
+                <div class="post__footer">
+                    <a href="#" class="btn-readmore">readmore</a>
+                    <ul class="post__menu-social">
+                        <li>share</li>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <div class="pagination">
+            <ul>
+                <li><a href="">1</a></li>
+                <li class="current"><a href="">2</a></li>
+                <li><a href="">3</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+
+</div>
+
+<div class="gallery">
+    <div class="gallery-row box-style wow fadeIn"  data-wow-duration="1s" data-wow-offset="200">
+        <div><img src="./static/image/gallery1.png" alt=""></div>
+        <div><img src="./static/image/gallery2.png" alt=""></div>
+        <div><img src="./static/image/gallery3.png" alt=""></div>
+        <div><img src="./static/image/gallery4.png" alt=""></div>
+    </div>
+    <div class="gallery-row box-style wow fadeIn"  data-wow-duration="2s" data-wow-offset="300">
+        <div><img src="./static/image/gallery5.png" alt=""></div>
+        <div><img src="./static/image/gallery6.png" alt=""></div>
+        <div><img src="./static/image/gallery7.png" alt=""></div>
+        <div><img src="./static/image/gallery8.png" alt=""></div>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <ul class="menu-social">
+        <li><a href="#" class="icon-facebook">facebook</a></li>
+        <li><a href="#" class="icon-twitter">twitter</a></li>
+        <li><a href="#" class="icon-linkedin">linkedin</a></li>
+        <li><a href="#" class="icon-instagram">instagram</a></li>
+        <li><a href="#" class="icon-youtube-play">youtube</a></li>
+    </ul>
+
+    <div class="footer">
+            <a href=""><img src="./static/image/logofooner.png" alt=""></a>
+            <ul class="menu-footer">
+                <li><a href="#" class="color-yellow">home</a></li>
+                <li><a href="#">fetured</a></li>
+                <li><a href="#">UPCOMING </a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">categories</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+    </div>
+<div class="sub-footer">TravelGram   Designed  By  Navin Chandra Gup</div>
+</footer>
+
+</body>

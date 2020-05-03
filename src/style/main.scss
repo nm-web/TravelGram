@@ -1,0 +1,76 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "global";
+@import "header";
+@import "media";
+@import "sidebar";
+@import "content";
+@import "pagination";
+@import "gallery";
+@import "footer";
+
+
+
+:root{
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Work Sans', 'Pompiere', 'Open Sans', sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  //align-items: center;
+}
+
+#back-top {
+  margin: -1.5% auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 25;
+  width: 6.25em;
+  min-height: 1px;
+  //height: 4.68em;
+  background-color: white;
+  position: fixed;
+  bottom:0;
+  left: calc(50% - 3.125em);
+  visibility: hidden;
+  & i {
+    color:#000000;
+
+  }
+
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border-bottom: 14px solid #e21712;
+  }
+
+  &::before {
+    left: 0;
+    border-right: 14px solid transparent;
+  }
+
+  &::after {
+    right: 0;
+    border-left: 14px solid transparent;
+  }
+
+}
+
