@@ -6,7 +6,6 @@
  *
  * @package TravelGram
  */
-
 if ( ! function_exists( 'travelgram_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -223,15 +222,13 @@ add_filter( 'excerpt_length', function(){
 
 //получение контента для слайдера
 function slider_content ($id) {
-	$media = get_attached_media( 'image', $id);
-	$media = array_shift( $media );
-	$image_url = $media->guid;
-	$post_id = get_post( $id);
-	$title = $post_id->post_title;
-	$content = $post_id->post_excerpt;
 
-	$url = get_permalink($id);
-	return array ($image_url,$title,$content,$url);
+    $post_id = get_post( $id['ID']);
+    $content = $post_id->post_excerpt;
+    $title = $post_id->post_title;
+    $image =  get_the_post_thumbnail_url( $id['ID'], 'slider' );
+    $url = get_post_permalink($id['ID']);
+	return array ($image,$title,$content,$url);
 }
 
 //получение картинки из поста
@@ -244,6 +241,7 @@ function send_img ($content){
 
 	return $img;
 }
+
 
 function replace_class ($html){
 	$html = str_replace( 'class=', 'class="wow zoomIn" data-wow-offset="200" data-wow-duration="1.5s"', $html );

@@ -1,15 +1,18 @@
 $(document).ready(() => {
+  if ($(window).width() > 768) {
     $('.slider').slick({
-        arrows: true,
-        dots: true,
-        fade: true,
+      arrows: true,
+      dots: true,
+      fade: true,
 
-        prevArrow: '<div class="icon-up-open-big slider-arrows slider-arrows-prev"></div>',
-        nextArrow: '<div class="icon-down-open-big slider-arrows slider-arrows-next"></div>',
-      });
+      prevArrow: '<div class="icon-up-open-big slider-arrows slider-arrows-prev"></div>',
+      nextArrow: '<div class="icon-down-open-big slider-arrows slider-arrows-next"></div>',
+    });
+  };
 
     $('.menu-toggle').on('click', function () {
         $('.header nav').toggleClass('view-block');
+        $('.header').toggleClass('mobile');
         $('.slider-box__title').toggleClass('drive-down');
       });
 
@@ -53,7 +56,26 @@ $(document).ready(() => {
       .css('display', 'none');
   };
 
+  let headerSlider = function (nameSlider) {
+    let slider = $('.'+nameSlider);
+    if ($(window).width() > 768 && !(slider.hasClass('slick-initialized'))) {
+      $(slider).slick({
+        arrows: true,
+        dots: true,
+        fade: true,
+        prevArrow: '<div class="icon-up-open-big slider-arrows slider-arrows-prev"></div>',
+        nextArrow: '<div class="icon-down-open-big slider-arrows slider-arrows-next"></div>',
+      });
+    } else if ($(window).width() < 768 && slider.hasClass('slick-initialized')) {
+      slider.slick('unslick');
+    }
+  };
 
+  $(window).on('resize',function () {
+
+    headerSlider('slider');
+
+  });
 
 
 

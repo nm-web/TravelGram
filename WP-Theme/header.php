@@ -15,6 +15,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Natalya Motovilova">
+    <meta name="description" content="Адаптивная верстка,перенос на Wordpress">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pompiere|Work+Sans&display=swap"
           rel="stylesheet">
@@ -27,7 +29,7 @@
 
     <header class="header">
 
-        <div class="row-between content_center">
+        <div class="row-between content_center header-top">
 			<?php get_search_form(); ?>
 			<?php the_custom_logo(); ?>
             <a class="btn-subcribe">подписаться</a>
@@ -64,17 +66,19 @@
                     'post_status' => 'publish',
                 );
 
-                $result = wp_get_recent_posts( $args, $id_post);
+                $result = wp_get_recent_posts($args);
 
-                list($image_url,$title,$content,$url) = slider_content($result[0]);
+
+                list($image,$title,$content,$url) = slider_content($result[0]);
+
+
 
 			?>
 
 
             <div class="slider-box"
 
-                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image_url; ?>');">
-
+                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image; ?>');">
                 <section class="slider-box__title wow fadeInLeft " data-wow-delay="0.5s">
                     <h3><?php the_field( "header", 61 ); ?></h3>
                     <p><?php the_field( "quotes", 61 ); ?></p>
@@ -91,7 +95,7 @@
 
             <?php list($image_url,$title,$content,$url) = slider_content($result[1]); ?>
             <div class="slider-box"
-                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image_url; ?>');">
+                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image; ?>');">
                 <section class="slider-box__title ">
                     <h2><?php the_field( "header2", 61 ); ?></h2>
                     <p><?php the_field( "quotes2", 61 ); ?></p>
@@ -105,9 +109,9 @@
                 </section>
             </div>
 
-	        <?php list($image_url,$title,$content,$url) = slider_content($result[2]); ?>
+	        <?php list($image,$title,$content,$url) = slider_content($result[2]); ?>
             <div class="slider-box"
-                 style="background-image:  linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image_url; ?>');">
+                 style="background-image:  linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image; ?>');">
                 <section class="slider-box__title ">
                     <h2><?php the_field( "header3", 61 ); ?></h2>
                     <p><?php the_field( "quote3", 61 ); ?></p>
@@ -121,9 +125,9 @@
                 </section>
             </div>
 
-	        <?php list($image_url,$title,$content,$url) = slider_content($result[3]); ?>
+	        <?php list($image,$title,$content,$url) = slider_content($result[3]); ?>
             <div class="slider-box"
-                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image_url; ?>');">
+                 style="background-image: linear-gradient(-115deg, transparent 63%, rgba(0,0,0,0.6)  0), url('<?php echo $image; ?>');">
 
                 <section class="slider-box__title ">
                     <h2><?php the_field( "header4", 61 ); ?></h2>
