@@ -1,5 +1,5 @@
 mkdir dist
-xcopy c:\source\TravelgramWP\static-site c:\source\TravelgramWP\dist /E
+xcopy c:\source\TravelgramWP\static-site\ c:\source\TravelgramWP\dist\ /E
 
 git commit -am "Save uncommited changes (WIP)"
 git branch --delete --force gh-pages
