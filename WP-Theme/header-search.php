@@ -28,7 +28,7 @@
             <div class="underline row-between content_center">
 	            <?php get_search_form(); ?>
 	            <?php the_custom_logo( );?>
-                <a class="btn-subcribe">подписаться</a>
+                <a class="btn-subcribe">SubScribe</a>
             </div>
 
         <section class="row-menu row-between content_center">

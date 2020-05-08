@@ -44,17 +44,34 @@ $(document).ready(() => {
     $('body,html').animate({scrollTop: 0}, 400);
   });
 
+  let mobileMenu = function () {
+    if ($(window).width() > 768) {
+      $('.menu-item-206').hover(fun_on, fun_out);
 
-  $('.menu-item-206').hover(fun_on, fun_out);
+    } else {
+      $('.menu-item-206').on('click',()=>{
+        $('.sub-menu').toggle();
+        if ($(window).width() > 320) {
+          $('.header nav').css('transform','translateX(-100px)');
+        } else {
+          $('.header nav').css('transform','translateX(-50px)')
+        }
+        $('.menu-item').on('click',()=>{
+          $('.header nav').css('transform','translateX(0px)');
+        });
+      });
+    }
 
-  function fun_on() {
-    $('.sub-menu').css('display', 'block');
+    function fun_on() {
+      $('.sub-menu').css('display', 'block');
+    };
+
+    function fun_out() {
+      $('.sub-menu')
+        .css('display', 'none');
+    };
   };
 
-  function fun_out() {
-    $('.sub-menu')
-      .css('display', 'none');
-  };
 
   let headerSlider = function (nameSlider) {
     let slider = $('.'+nameSlider);
@@ -74,10 +91,11 @@ $(document).ready(() => {
   $(window).on('resize',function () {
 
     headerSlider('slider');
+    mobileMenu();
 
   });
 
-
+  mobileMenu();
 
   new WOW().init();
 

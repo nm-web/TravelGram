@@ -1317,11 +1317,7 @@ body {
     margin: 1em 0;
 }
 
-/*.comment-box {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    width: 70%;*/
-/*}*/
+
 
 .comment-box img {
     display: inline-block;
@@ -1476,11 +1472,11 @@ body {
     }
 
     .header nav {
-        -webkit-transform: translateY(-1000px);
-        transform: translateY(-1000px);
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
         position: absolute;
-        top: 36%;
-        left: 41%;
+        top: 40%;
+        left: 40%;
         font-size: 1.5rem;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
@@ -1493,7 +1489,7 @@ body {
          left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255,255,255,1);
 
          z-index: 15;
 
@@ -1508,8 +1504,8 @@ body {
 
 
     .header nav.view-block {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px)
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
     }
 
     .menu-top {
@@ -1535,11 +1531,15 @@ body {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column
+        flex-direction: column-reverse;
     }
 
     .body-page .sidebar, .body-page .content {
         width: 98%
+    }
+
+    .body-page .content{
+        margin-top: 3em;
     }
 
     footer .menu-social li {
@@ -1566,7 +1566,7 @@ body {
     .header .view-block {
 
         top: 20%;
-        left: 25%;
+        left: 40%;
 
     }
 }
@@ -1578,7 +1578,7 @@ body {
 
     .header .view-block {
 
-        top: 10%;
+        top: 20%;
         left: 20%;
 
     }

@@ -32,7 +32,7 @@
         <div class="row-between content_center header-top">
 			<?php get_search_form(); ?>
 			<?php the_custom_logo(); ?>
-            <a class="btn-subcribe">подписаться</a>
+            <a class="btn-subcribe">SubScribe</a>
         </div>
         <div class="underline"></div>
         <section class="row-menu row-between content_center">

@@ -39,7 +39,7 @@ get_header( 'search' );
                     <section class="text">
                         <span class="tag"><?php the_category( ' / ' ); ?></span>
                         <a href="<?php the_permalink(); ?>"><h3> <?php the_title(); ?></h3></a>
-						<?php the_content(); ?>
+						<?php the_excerpt(); ?>
                         <div class="date-comment">
                             <time><?php the_time( 'j F, Y' ) ?></time>
                             <i class="icon-heart-empty"><span>100 likes</span></i>
