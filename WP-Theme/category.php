@@ -61,13 +61,13 @@ get_header( 'search' );
                     <div class="post__footer">
 
                         <div class="date-comment">
-                            <time><?php the_time( 'j F, Y' ); ?></time>
-                            <i class="icon-heart-empty like">
+                            <div><?php the_time( 'j F, Y' ); ?></div>
+                            <div class="icon-heart-empty like">
                                 <?php
                                 echo do_shortcode('[wp_ulike]');
                                 ?>
                                 likes
-                            </i>
+                            </div>
                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                         </div>
                         <ul class="post__menu-social">

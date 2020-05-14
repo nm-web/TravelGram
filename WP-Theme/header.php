@@ -18,7 +18,7 @@
     <meta name="author" content="Natalya Motovilova">
     <meta name="description" content="Адаптивная верстка,перенос на Wordpress">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pompiere|Work+Sans&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPompiere%7CWork+Sans&display=swap"
           rel="stylesheet">
 	<?php wp_head(); ?>
 </head>

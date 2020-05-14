@@ -28,10 +28,10 @@ get_header( 'search' );
                     <div class="post__footer">
 
                         <div class="date-comment">
-                            <time><?php the_time( 'j F, Y' ) ?></time>
-                            <i class="icon-heart-empty like"><?php
+                            <div><?php the_time( 'j F, Y' ) ?></div>
+                            <div class="icon-heart-empty like"><?php
                                 echo do_shortcode( '[wp_ulike]' );
-                                ?><span>likes</span></i>
+                                ?><span>likes</span></div>
                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                         </div>
                         <ul class="post__menu-social">

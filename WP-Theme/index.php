@@ -57,7 +57,7 @@ get_header();
             <div class="photo_top">
                 <a href="<?php the_permalink(); ?>" class="btn_readmore">readmore</a>
                 <div class="date-comment">
-                    <time><?php the_time( 'j F, Y' ) ?></time>
+                    <div><?php the_time( 'j F, Y' ) ?></div>
                     <i class="icon-heart-empty"></i>
                     <i class="icon-comment-empty"><?php comments_number( 0, '1', '% ' ); ?></i>
                 </div>
@@ -98,10 +98,10 @@ get_header();
                                     <div class="photo_top">
                                         <a href="<?php the_permalink(); ?>" class="btn_readmore">readmore</a>
                                         <div class="date-comment">
-                                            <time><?php the_time( 'j F, Y' ) ?></time>
-                                            <i class="icon-heart-empty like"><?php
+                                            <div><?php the_time( 'j F, Y' ) ?></div>
+                                            <div class="icon-heart-empty like"><?php
 												echo do_shortcode( '[wp_ulike]' );
-												?><span>likes</span></i>
+												?><span>likes</span></div>
                                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                         </div>
                                     </div>
@@ -111,10 +111,10 @@ get_header();
                                     <span class="tag"><?php the_category( ' / ' ); ?></span>
                                     <a href="<?php the_permalink(); ?>"><h3> <?php the_title(); ?></h3></a>
                                     <div class="date-comment">
-                                        <time><?php the_time( 'j F, Y' ) ?></time>
-                                        <i class="icon-heart-empty like"><?php
+                                        <div><?php the_time( 'j F, Y' ) ?></div>
+                                        <div class="icon-heart-empty like"><?php
 											echo do_shortcode( '[wp_ulike]' );
-											?><span>likes</span></i>
+											?><span>likes</span></div>
                                         <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                     </div>
                                     <div class="post__footer">
@@ -140,10 +140,10 @@ get_header();
                                     <div class="photo_top">
                                         <a href="<?php the_permalink(); ?>" class="btn_readmore">readmore</a>
                                         <div class="date-comment">
-                                            <time><?php the_time( 'j F, Y' ) ?></time>
-                                            <i class="icon-heart-empty like"><?php
+                                            <div><?php the_time( 'j F, Y' ) ?></div>
+                                            <div class="icon-heart-empty like"><?php
                                                 echo do_shortcode( '[wp_ulike]' );
-                                                ?><span>likes</span></i>
+                                                ?><span>likes</span></div>
                                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                         </div>
                                     </div>
@@ -153,10 +153,10 @@ get_header();
                                     <span class="tag"><?php the_category( ' / ' ); ?></span>
                                     <a href="<?php the_permalink(); ?>"><h3> <?php the_title(); ?></h3></a>
                                     <div class="date-comment">
-                                        <time><?php the_time( 'j F, Y' ) ?></time>
-                                        <i class="icon-heart-empty like"><?php
+                                        <div><?php the_time( 'j F, Y' ) ?></div>
+                                        <div class="icon-heart-empty like"><?php
                                             echo do_shortcode( '[wp_ulike]' );
-                                            ?><span>likes</span></i>
+                                            ?><span>likes</span></div>
                                         <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                     </div>
                                     <div class="post__footer">
@@ -187,10 +187,10 @@ get_header();
                                 <div class="photo_top">
                                     <a href="<?php the_permalink(); ?>" class="btn_readmore">readmore</a>
                                     <div class="date-comment">
-                                        <time><?php the_time( 'j F, Y' ) ?></time>
-                                        <i class="icon-heart-empty like"><?php
+                                        <div><?php the_time( 'j F, Y' ) ?></div>
+                                        <div class="icon-heart-empty like"><?php
                                             echo do_shortcode( '[wp_ulike]' );
-                                            ?><span>likes</span></i>
+                                            ?><span>likes</span></div>
                                         <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                     </div>
                                 </div>
@@ -200,10 +200,10 @@ get_header();
                                 <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3>
                                 </a>
                                 <div class="date-comment">
-                                    <time><?php the_time( 'j F, Y' ) ?></time>
-                                    <i class="icon-heart-empty like"><?php
+                                    <div><?php the_time( 'j F, Y' ) ?></div>
+                                    <div class="icon-heart-empty like"><?php
                                         echo do_shortcode( '[wp_ulike]' );
-                                        ?><span>likes</span></i>
+                                        ?><span>likes</span></div>
                                     <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                                 </div>
 

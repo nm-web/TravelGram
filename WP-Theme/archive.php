@@ -41,7 +41,7 @@ get_header( 'search' );
                         <a href="<?php the_permalink(); ?>"><h3> <?php the_title(); ?></h3></a>
 						<?php the_excerpt(); ?>
                         <div class="date-comment">
-                            <time><?php the_time( 'j F, Y' ) ?></time>
+                            <div><?php the_time( 'j F, Y' ) ?></div>
                             <i class="icon-heart-empty"><span>100 likes</span></i>
                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                         </div>

@@ -46,7 +46,7 @@ get_header( 'search' );
                     <div class="post__footer">
 
                         <div class="date-comment">
-                            <time><?php the_time( 'j F, Y' ) ?></time>
+                            <div><?php the_time( 'j F, Y' ) ?></div>
                             <i class="icon-heart-empty"><span>likes</span></i>
                             <i class="icon-comment-empty"><span><?php comments_number( 0, '1', '% ' ); ?></span></i>
                         </div>
